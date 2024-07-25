@@ -1,7 +1,9 @@
 local players = game:GetService("Players")
-game:GetService("StarterGui"):SetCore("SendNotification", {
+local starterGui = game:GetService("StarterGui")
+
+starterGui:SetCore("SendNotification", {
     Title = "Loading GUI";
-    Text = "Thank You For Using EclipseHub, " .. players.LocalPlayer.DisplayName;
-    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. players.LocalPlayer.UserId .. "&w=180&h=180 true";
+    Text = "Thank you for using EclipseHub, " .. players.LocalPlayer.DisplayName;
+    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. players.LocalPlayer.UserId .. "&w=180&h=180";
     Duration = 5
 })
